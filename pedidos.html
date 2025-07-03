@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="estiloPasteleria.css" rel="Stylesheet" type="text/css">
+        <title> Pasteleria Doñu</title>
+    </head>
+    <body>
+        <header>
+            <div class="contenedor">
+                <img class="logo" src="img/logo.jpg">
+                <h1>PASTELERIA DOÑU</h1>
+            </div>
+        </header>
+            <br>
+            <div>
+                <nav>   
+                    <table>
+                        <tr>
+                            <td><h3><a href="Index.html">INICIO</a></h3></td>
+                            <td><h3><a href="productos.html">PRODUCTOS</a></h3></td>
+                        </tr>
+                    </table>
+                </nav>
+            </div>
+            <br>
+            <img class="banner" src="img/banner2.png">
+            <br>
+            <br>
+            <H4>HAZ TU PEDIDO YA!</H4>
+            <br>
+            <br>
+            <div class="contenedor">
+                <div class="alineaIzquierda">
+                    <img src="img/pasteleria.jpg" width="400px" height="350px" >
+                    <p>En Doñu, cada pastel es hecho a medida, pensado especialmente para ti. Nuestro sistema de agendado no es solo una cita: es el primer paso para crear algo único, con el tiempo, el detalle y el cariño que tu celebración merece.Porque aquí, cada pedido es especial… y lo tratamos como tal.</p>
+                </div>
+                <div>
+                    <form  id="formulario" name="formulario" action="agendapedido.php" method="get">
+                        <label for="nombre">NOMBRE COMPLETO:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                        <label for="telefono">TELEFÓNO:</label>
+                        <input type="text" id="telefono" name="telefono" required><br><br>
+                        <label for="FEntrega">FECHA DE ENTREGA:</label>
+                        <input type="date" id="FEntrega" name="FEntrega" required><br><br>
+                        <label for="pedido">PEDIDO:</label>
+                        <input type="text" id="pedido" name="pedido" required><br><br>
+                        <label for="nota">NOTA:</label>
+                        <textarea id="nota" name="nota"></textarea><br><br>
+                        <button type="submit" id="agendar">AGENDAR</button>
+                    </form>
+                    <BR>
+                    <H4>CANCELAR PEDIDO</H4>
+                    <BR>
+                    <form  id="formulario" name="formulario" action="eliminapedido.php" method="get">
+                        <label for="nombre">NOMBRE COMPLETO:</label>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                        <button type="submit" id="cancelar">CANCELAR</button>
+                    </form>
+                </div>
+            </div>
+
+                
+            <br>
+            <br>
+
+        <footer>
+            <p>&copy; 2025 Mi página web. Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>
